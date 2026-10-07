@@ -1,0 +1,21 @@
+
+---
+
+## requirements.txt
+
+```text
+matplotlib==3.8.4
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.11.4
+pingouin==0.5.3
+scikit-learn==1.4.2
+statsmodels==0.14.2
+tqdm==4.66.4
+diffusers==0.25.0
+transformers==4.40.2
+accelerate==0.30.1
+torch==2.1.0
+torchvision==0.16.0
+Pillow==10.3.0
+opencv-python==4.9.0.80
