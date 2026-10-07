@@ -1,0 +1,59 @@
+project:
+  name: sketch-text-img2img
+  seed: 42
+
+paths:
+  data_dir: data
+  results_dir: results
+  figures_dir: figures
+
+main_experiment:
+  n_total: 40
+  n_per_group: 20
+  time_limit_min: 45
+  max_iterations: 5
+
+ablation:
+  levels:
+    - L0
+    - L1
+    - L2
+    - L3
+    - L4
+  n_per_level: 10
+
+auto_sketch:
+  n_total: 40
+  groups:
+    text_only: 14
+    manual_sketch: 13
+    auto_sketch: 13
+
+multi_task:
+  n_total: 80
+  n_per_group: 40
+  tasks:
+    - poster
+    - ui_layout
+    - product_concept
+    - architectural_massing
+
+clip_validation:
+  n_sketches: 40
+  n_raters: 3
+
+professional_rating:
+  n_designers: 5
+
+generation:
+  model: stabilityai/stable-diffusion-xl-base-1.0
+  controlnet: diffusers/controlnet-canny-sdxl-1.0
+  clip_interrogator: ViT-L-14
+  cfg_scale: 7.5
+  steps: 30
+  resolution: 1024
+  seed: 42
+  img2img_strength: 0.75
+  controlnet_conditioning_scale: 0.75
+  canny_low: 100
+  canny_high: 200
