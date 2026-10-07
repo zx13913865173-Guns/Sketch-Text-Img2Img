@@ -1,0 +1,7 @@
+File	Description
+main_experiment.csv	Main experiment N=40, 20 per group
+ablation.csv	L0–L4, 10 per level
+auto_sketch.csv	Text-Only / Manual / Auto, N=40
+multi_task.csv	N=80, 40 per group, 4 tasks
+clip_validation.csv	N=40 sketches, 3 raters
+professional_ratings.csv	5 professional designers
